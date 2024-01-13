@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 interface Props {
-  id: string;
+  id: number;
   name: string;
 }
 
