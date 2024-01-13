@@ -5,7 +5,7 @@ interface Movie {
   name: string;
   language: string;
   image: string;
-  summary: React.ReactNode;
+  summary: React.ReactElement;
 }
 
 interface ApiMovie {
@@ -17,6 +17,16 @@ interface ApiMovie {
     image: {
       medium: string;
     };
-    summary: React.ReactNode;
+    summary: React.ReactElement;
   };
+}
+
+interface ApiOneMovie {
+  id: number;
+  name: string;
+  language: string;
+  image: {
+    medium: string;
+  };
+  summary: React.ReactElement;
 }
